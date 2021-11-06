@@ -1,0 +1,23 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_main">
+
+    <item 
+        android:id="@+id/action_extensions"
+        android:title="Extensions"
+        android:orderInCategory="100"
+		app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_mp3"
+                android:title="MP3"/>    
+            <item
+                android:id="@+id/action_mp4"
+                android:title="MP4"/>
+            <item
+                android:id="@+id/action_image"
+                android:title="Image" />
+        </menu>
+    </item>
+</menu>

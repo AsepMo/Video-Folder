@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="80dp"
+		android:id="@+id/folder_setting_layout">
+
+		<FrameLayout
+			android:layout_marginTop="10dip"
+			android:id="@+id/header_icon"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+
+		<ImageView
+			android:id="@+id/folder_icon_settings"
+			android:fadingEdgeLength="0dip"
+			android:layout_below="@id/header_icon"
+			android:layout_height="76dp"
+			android:layout_width="85dp"
+			android:layout_centerInParent="true"
+			android:src="@drawable/ic_folder_settings"
+			android:scaleType="fitXY"
+			android:paddingTop="4dip"
+			android:paddingBottom="4dip"
+			android:padding="10dp"
+			android:background="@drawable/border_black"/>
+
+		<FrameLayout
+			android:id="@+id/footer_icon"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/folder_icon_settings"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/folder_setting_layout"
+		android:id="@+id/action_menu_extension">
+
+		<FrameLayout
+			android:layout_marginTop="10dip"
+			android:id="@+id/header2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+
+		<HorizontalScrollView
+			android:id="@+id/scroll"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fadingEdgeLength="0dip"
+			android:layout_below="@id/header2"
+			android:paddingLeft="1dip"
+			android:background="@drawable/quickaction_slider_background"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:id="@+id/tracks"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="4dip"
+				android:paddingBottom="4dip"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/quickaction_slider_grip_left"/>
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/quickaction_slider_grip_right"/>
+
+			</LinearLayout>
+
+		</HorizontalScrollView>
+
+		<FrameLayout
+			android:id="@+id/footer"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/scroll"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

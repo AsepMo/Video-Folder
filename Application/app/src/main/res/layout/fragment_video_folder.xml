@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:fab="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.file.evolution.application.folder.ActionMenuFolder
+		android:id="@+id/navigation_menu"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/colorPrimary"/>
+
+	<com.file.evolution.application.folder.VideoFolder
+		android:id="@+id/videoFolder"
+		android:layout_below="@id/navigation_menu"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="?attr/colorPrimary"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/video_folder_progress"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:visibility="visible"
+	android:orientation="vertical"
+	android:background="#FFE82020">
+
+	<ProgressBar
+		android:id="@+id/folder_progress_loading"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="match_parent"
+		android:layout_height="16dp"
+		android:indeterminate="true"
+		android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"/>
+
+	<TextView
+		android:id="@+id/folder_progress_message"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="center_vertical"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Please wait.."
+		android:textColor="#FFFFFFFF"/>
+
+</LinearLayout>
+

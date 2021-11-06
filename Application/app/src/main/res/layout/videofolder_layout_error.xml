@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/video_folder_progress"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:visibility="visible"
+	android:orientation="vertical"
+	android:background="#FFE82020">
+
+	<ImageView
+		android:id="@+id/folder_icon_error"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/warning_icon"/>
+
+	<TextView
+		android:id="@+id/folder_title_error"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="center_vertical"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Scanning Error.."
+		android:textColor="#FFFFFFFF"/>
+
+</LinearLayout>
+
